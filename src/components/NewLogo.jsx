@@ -1,11 +1,18 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 export const NewLogo = ({ isDark }) => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <Link 
       to="/"
+      onClick={scrollToTop}
       className="flex items-center cursor-pointer" 
       aria-label="Learn Leopard Home"
     >
