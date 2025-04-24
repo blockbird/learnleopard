@@ -1,0 +1,21 @@
+
+{
+  "name": "Learn Leopard",
+  "short_name": "LearnLeopard",
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#FFC107",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
+  
