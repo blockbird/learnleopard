@@ -1,6 +1,5 @@
-
 import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { FeaturesSection } from './components/FeaturesSection';
@@ -22,7 +21,7 @@ export const App = () => {
   }, []);
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="bg-white min-h-screen">
         <Routes>
           <Route path="/" element={
@@ -43,6 +42,6 @@ export const App = () => {
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
