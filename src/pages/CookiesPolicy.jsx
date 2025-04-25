@@ -1,11 +1,17 @@
 import React from 'react';
 
 export const CookiesPolicy = () => {
+  // Calculate the first day of the current month
+  const today = new Date();
+  const firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = firstDayOfMonth.toLocaleDateString('en-US', options);
+
   return (
     <div className="container mx-auto px-4 py-16 pt-32 min-h-screen">
       <h1 className="text-3xl font-bold mb-6 text-accent">Cookies Policy</h1>
       <div className="space-y-4 text-gray-700">
-        <p>Last Updated: [Insert Date]</p>
+        <p>Last Updated: {formattedDate}</p>
         
         <h2 className="text-xl font-semibold mt-6 text-gray-800">1. What Are Cookies?</h2>
         <p>Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work, or work more efficiently, as well as to provide information to the owners of the site.</p>

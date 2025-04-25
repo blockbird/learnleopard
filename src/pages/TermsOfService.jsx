@@ -1,11 +1,17 @@
 import React from 'react';
 
 export const TermsOfService = () => {
+  // Calculate the first day of the current month
+  const today = new Date();
+  const firstDayOfMonth = new Date(today.getFullYear(), today.getMonth(), 1);
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = firstDayOfMonth.toLocaleDateString('en-US', options);
+
   return (
     <div className="container mx-auto px-4 py-16 pt-32 min-h-screen">
       <h1 className="text-3xl font-bold mb-6 text-accent">Terms of Service</h1>
       <div className="space-y-4 text-gray-700">
-        <p>Last Updated: [Insert Date]</p>
+        <p>Last Updated: {formattedDate}</p>
         
         <h2 className="text-xl font-semibold mt-6 text-gray-800">1. Agreement to Terms</h2>
         <p>By using our Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.</p>
