@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoImage from '../assets/images/logo.png'; // Import local logo
 
 export const NewLogo = ({ isDark }) => {
   const scrollToTop = () => {
@@ -18,7 +19,7 @@ export const NewLogo = ({ isDark }) => {
     >
       <div className="h-auto">
         <img 
-          src="https://heyboss.heeyo.ai/user-assets/learn%20leopard%20transparent_sFqcp8Lh.png"
+          src={logoImage} // Use imported logo
           alt="Learn Leopard Logo" 
           className="h-16 md:h-20 w-auto object-contain"
         />

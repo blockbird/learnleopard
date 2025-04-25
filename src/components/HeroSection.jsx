@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import heroImage from '../assets/images/learnleo1.png';
 
 export const HeroSection = () => {
   const handleScroll = (sectionId) => {
@@ -43,7 +43,7 @@ export const HeroSection = () => {
               <div className="absolute -left-5 -bottom-5 w-28 h-28 bg-primary-light rounded-full opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
               
               <img 
-                src="https://heyboss.heeyo.ai/user-assets/ChatGPT%20Image%20Apr%201%2C%202025%2C%2006_19_07%20PM_PRpOimVy.png" 
+                src={heroImage}
                 alt="Cartoon leopard in jungle with parrot and lizard" 
                 className="rounded-2xl shadow-2xl z-10 relative transform hover:scale-105 transition-transform duration-500"
               />

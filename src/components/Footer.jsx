@@ -1,10 +1,9 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { NewLogo } from './NewLogo';
 
 export const Footer = () => {
-  const currentYear = 2025;
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-gray-100 text-gray-700 pt-16 pb-8">
@@ -26,13 +25,13 @@ export const Footer = () => {
           </p>
           
           <div className="flex space-x-6 text-sm">
-            <a href="https://legal.heyboss.tech/67845a5e6e6bf5ecd4a3ae47/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+            <Link to="/privacy" className="hover:text-primary transition-colors">
               Privacy Policy
-            </a>
-            <a href="https://legal.heyboss.tech/67845cfe76f9675292514b80/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="/terms" className="hover:text-primary transition-colors">
               Terms of Service
-            </a>
-            <Link to="/" className="hover:text-primary transition-colors">
+            </Link>
+            <Link to="/cookies" className="hover:text-primary transition-colors">
               Cookies Policy
             </Link>
           </div>

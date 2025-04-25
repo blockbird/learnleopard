@@ -1,6 +1,8 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react';
+import sarahImage from '../assets/images/sarah.png';
+import michaelImage from '../assets/images/michael.png';
+import ameliaImage from '../assets/images/amelia.png';
 
 export const TestimonialsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -9,23 +11,26 @@ export const TestimonialsSection = () => {
   
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Parent of two",
-      image: "https://heyboss.heeyo.ai/user-assets/ChatGPT%20Image%20Apr%206,%202025,%2009_56_21%20AM_nlxOfji7.png",
-      content: "Learn Leopard has transformed our home learning environment. My kids are excited about education for the first time, and I've seen significant improvement in their grades."
+      quote: "Learn Leopard revolutionized how I find AI tools for my classroom. The reviews are spot-on and save me hours of research!",
+      name: "Sarah Chen",
+      title: "High School STEM Teacher",
+      image: sarahImage,
+      rating: 5,
     },
     {
-      name: "Michael Ashby",
-      role: "High School Teacher",
-      image: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Michael_F_Ashby.png",
-      content: "As an educator, I appreciate the quality of the reviews and daily updates. Learn Leopard has helped me integrate cutting-edge AI tools into my classroom with confidence."
+      quote: "As a lifelong learner, staying current with AI is crucial. Learn Leopard's daily updates and insights are invaluable.",
+      name: "Michael Reyes",
+      title: "Software Developer",
+      image: michaelImage,
+      rating: 5,
     },
     {
+      quote: "The personalized learning path helped me focus my AI studies. I feel much more confident applying AI concepts in my work.",
       name: "Amelia Xie",
-      role: "Mother of a 5-year-old girl",
-      image: "https://heyboss.heeyo.ai/user-assets/ChatGPT%20Image%20Apr%207,%202025,%2010_33_10%20AM_w7eX6lHW.png",
-      content: "The structured learning schedules are perfect for my daughter. She loves the interactive AI activities, and I've noticed her becoming more engaged and confident with her learning."
-    }
+      title: "Marketing Manager",
+      image: ameliaImage,
+      rating: 5,
+    },
   ];
   
   useEffect(() => {
@@ -105,12 +110,12 @@ export const TestimonialsSection = () => {
                     </div>
                     
                     <blockquote className="italic text-gray-600 mb-4">
-                      "{testimonial.content}"
+                      "{testimonial.quote}"
                     </blockquote>
                     
                     <div>
                       <p className="font-bold text-accent">{testimonial.name}</p>
-                      <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                      <p className="text-gray-500 text-sm">{testimonial.title}</p>
                     </div>
                   </div>
                 </div>

@@ -1,7 +1,9 @@
-
 import React, { useRef, useEffect, useState } from 'react';
-import { TrendingUp, Clock, Lightbulb } from 'lucide-react';
+import { TrendingUp, Clock, Lightbulb, LayoutList, Sparkles } from 'lucide-react';
 import { FeatureModal } from './FeatureModal';
+import benefitImage1 from '../assets/images/learnleo2.png';
+import benefitImage2 from '../assets/images/learnleo3.png';
+import benefitImage3 from '../assets/images/learnleo4.png';
 
 export const BenefitsSection = () => {
   const benefitsRef = useRef([]);
@@ -39,7 +41,7 @@ export const BenefitsSection = () => {
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
       title: "Improved Testing Scores",
       description: "Students using AI education tools show an average 27% increase in test performance across subjects.",
-      imageUrl: "https://heyboss.heeyo.ai/user-assets/ChatGPT%20Image%20Apr%201%2C%202025%2C%2007_57_42%20PM_jhQhm8tS.png",
+      imageUrl: benefitImage1,
       buttonText: "See the Research",
       action: () => setShowResearchModal(true)
     },
@@ -47,7 +49,7 @@ export const BenefitsSection = () => {
       icon: <Clock className="h-10 w-10 text-primary" />,
       title: "Learn Anywhere, Anytime",
       description: "Access your personalized learning plan from any device, whenever it fits your schedule.",
-      imageUrl: "https://heyboss.heeyo.ai/user-assets/ChatGPT%20Image%20Apr%202,%202025,%2009_06_04%20AM_Lww-b4eb.png",
+      imageUrl: benefitImage2,
       buttonText: "How It Works",
       action: () => setShowHowItWorksModal(true)
     },
@@ -55,7 +57,7 @@ export const BenefitsSection = () => {
       icon: <Lightbulb className="h-10 w-10 text-primary" />,
       title: "Stay Ahead of the Curve",
       description: "Be the first to know about emerging AI learning tools and techniques that are reshaping education.",
-      imageUrl: "https://heyboss.heeyo.ai/user-assets/ChatGPT%20Image%20Apr%202,%202025,%2008_27_31%20AM_Du3o2t1Y.png",
+      imageUrl: benefitImage3,
       buttonText: "Why AI Education Matters",
       action: () => setShowWhyAIMattersModal(true)
     }
