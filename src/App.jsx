@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
+import { IntroTextSection } from './components/IntroTextSection';
 import { FeaturesSection } from './components/FeaturesSection';
 import { BenefitsSection } from './components/BenefitsSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
@@ -37,6 +38,7 @@ const Layout = () => {
 const LandingPage = () => (
   <>
     <HeroSection />
+    <IntroTextSection />
     <FeaturesSection />
     <BenefitsSection />
     <StatsSection />
