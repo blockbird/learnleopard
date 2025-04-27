@@ -1,13 +1,29 @@
-import React from 'react';
-import { ArrowRight } from 'lucide-react';
-import heroImage from '../assets/images/learnleo1.png';
+import React, { useState, useRef } from 'react';
+import { ArrowRight, Play } from 'lucide-react';
 
 export const HeroSection = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  const videoRef = useRef(null);
+
   const handleScroll = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handlePlayClick = () => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  const handleVideoPlay = () => {
+    setIsPlaying(true);
+  };
+
+  const handleVideoPause = () => {
+    setIsPlaying(false);
   };
 
   return (
@@ -38,15 +54,36 @@ export const HeroSection = () => {
           </div>
           
           <div className="w-full md:w-1/2 relative z-10">
-            <div className="relative">
+            <div className="relative group">
               <div className="absolute -right-10 -top-10 w-40 h-40 bg-secondary rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute -left-5 -bottom-5 w-28 h-28 bg-primary-light rounded-full opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
               
-              <img 
-                src={heroImage}
-                alt="Cartoon leopard in jungle with parrot and lizard" 
-                className="rounded-2xl shadow-2xl z-10 relative transform hover:scale-105 transition-transform duration-500"
-              />
+              <video 
+                ref={videoRef}
+                src="https://jpbq4vkvpplludcc.public.blob.vercel-storage.com/IMG_0491-esv2-50p-bg-10p-9kLxjyInxI0VdNsKZqancw9ka7yVd5.mov"
+                controls
+                loop
+                playsInline
+                onPlay={handleVideoPlay}
+                onPause={handleVideoPause}
+                className="rounded-2xl shadow-2xl z-10 relative w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              >
+                Your browser does not support the video tag.
+              </video>
+
+              {!isPlaying && (
+                <button 
+                  onClick={handlePlayClick}
+                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition-opacity duration-300 rounded-2xl z-20 cursor-pointer focus:outline-none"
+                  aria-label="Play video"
+                >
+                  <Play 
+                    size={80}
+                    className="text-white opacity-80 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-300"
+                    fill="currentColor"
+                  />
+                </button>
+              )}
             </div>
           </div>
         </div>
