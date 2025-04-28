@@ -63,9 +63,9 @@ export const IntroTextSection = () => {
         </ul>
 
         <p className="text-lg md:text-xl text-gray-800 mb-8 leading-relaxed">
-          We charge a small subscription so we can stay completely unbiased—and keep you up-to-date.
+          We charge a subscription so we can stay completely unbiased—and keep you up-to-date.
           <br/>
-          Because new tools launch daily, and what's best today might not be best tomorrow.
+          And because new tools launch daily - what's best today might not be best tomorrow.
         </p>
 
         <p className="text-lg md:text-xl text-gray-800 mb-8 leading-relaxed">
