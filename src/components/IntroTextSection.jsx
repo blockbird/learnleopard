@@ -3,6 +3,8 @@ import React from 'react';
 // import jungleBg from '../assets/images/jungle-bg.jpg'; 
 // Import necessary icons
 import { Search, Filter, ClipboardList, UserCheck } from 'lucide-react'; 
+// Import the new image
+import gladLeopardImg from '../assets/images/gladleopard.png';
 
 export const IntroTextSection = () => {
   return (
@@ -82,9 +84,14 @@ export const IntroTextSection = () => {
           Instant access ✨. Personalized plans. Zero guesswork.
         </p>
 
-        <p className="text-xl md:text-2xl font-bold text-accent">
-          We're glad you're here. 🐆
-        </p>
+        {/* Replace the final text paragraph with the image */}
+        <div className="mt-8"> {/* Add some margin top */}
+          <img 
+            src={gladLeopardImg} 
+            alt="Happy Learn Leopard mascot" 
+            className="rounded-xl shadow-lg w-full h-auto relative z-10" 
+          />
+        </div>
 
       </div>
     </section>
