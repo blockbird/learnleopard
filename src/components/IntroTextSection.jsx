@@ -85,7 +85,7 @@ export const IntroTextSection = () => {
         </p>
 
         {/* Replace the final text paragraph with the image */}
-        <div className="mt-8 flex justify-center"> {/* Added flex justify-center to center the relative container */}
+        <div className="mt-16 flex justify-center"> {/* Increased margin-top from 12 to 16 */}
           <div className="relative w-3/4"> {/* Added relative container with w-3/4 */}
             {/* Offset Frame Div */}
             <div className="absolute -left-4 -top-4 w-full h-full bg-primary rounded-xl opacity-20 z-0"></div>
