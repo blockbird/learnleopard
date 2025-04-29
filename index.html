@@ -11,14 +11,22 @@
     <meta name="theme-color" content="#FFC107">
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-995933950">
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-995933950"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
     
-      gtag('config', 'AW-995933950');
+      function initGtag() {
+        gtag('js', new Date());
+        gtag('config', 'AW-995933950');
+      }
+    
+      if (document.readyState === 'complete') {
+        initGtag();
+      } else {
+        window.addEventListener('load', initGtag);
+        document.addEventListener("turbolinks:load", initGtag);
+      }
     </script>
 
   </head>
