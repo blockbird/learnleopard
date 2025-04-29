@@ -61,7 +61,7 @@ export const HeroSection = () => {
               <video 
                 ref={videoRef}
                 src="https://jpbq4vkvpplludcc.public.blob.vercel-storage.com/learnleopardlander-oYh4UIEgyohXiJQe8RcJuraGWsIriw.mp4"
-                poster="https://jpbq4vkvpplludcc.public.blob.vercel-storage.com/Screenshot%202025-04-29%20at%2015.40.50-Erm3ASjSAo6ELEc4nbbTWUhCLGuw7q.png"
+                poster="https://jpbq4vkvpplludcc.public.blob.vercel-storage.com/videothumbnail-ttMnJveKSmtYhZBRxB2QmwAfTW1KTN.jpeg"
                 controls
                 loop
                 playsInline

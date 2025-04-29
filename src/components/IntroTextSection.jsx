@@ -85,12 +85,18 @@ export const IntroTextSection = () => {
         </p>
 
         {/* Replace the final text paragraph with the image */}
-        <div className="mt-8"> {/* Add some margin top */}
-          <img 
-            src={gladLeopardImg} 
-            alt="Happy Learn Leopard mascot" 
-            className="rounded-xl shadow-lg w-full h-auto relative z-10" 
-          />
+        <div className="mt-8 flex justify-center"> {/* Added flex justify-center to center the relative container */}
+          <div className="relative w-3/4"> {/* Added relative container with w-3/4 */}
+            {/* Offset Frame Div */}
+            <div className="absolute -left-4 -top-4 w-full h-full bg-primary rounded-xl opacity-20 z-0"></div>
+            {/* Image Tag */}
+            <img 
+              src={gladLeopardImg} 
+              alt="Happy Learn Leopard mascot" 
+              // Keep size classes, add relative and z-10
+              className="rounded-xl shadow-lg w-full mx-auto h-auto relative z-10" 
+            />
+          </div>
         </div>
 
       </div>
