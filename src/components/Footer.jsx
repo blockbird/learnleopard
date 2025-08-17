@@ -14,7 +14,7 @@ export const Footer = () => {
               <NewLogo isDark={false} />
             </div>
             <p className="mb-6 mt-4 max-w-lg mx-auto">
-              Discover the best AI education tools to enhance learning with personalized reviews and daily updates.
+              Discover the best AI education tools to enhance learning with personalized reviews and regular updates.
             </p>
           </div>
         </div>
