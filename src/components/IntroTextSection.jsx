@@ -1,8 +1,6 @@
 import React from 'react';
 // Remove background image import
 // import jungleBg from '../assets/images/jungle-bg.jpg';
-// Import the new image
-import gladLeopardImg from '../assets/images/gladleopard.png';
 
 export const IntroTextSection = () => {
   return (
@@ -55,21 +53,6 @@ export const IntroTextSection = () => {
           <br />
           Instant access ✨. Personalized plans. Zero guesswork.
         </p>
-
-        {/* Replace the final text paragraph with the image */}
-        <div className="mt-16 flex justify-center"> {/* Increased margin-top from 12 to 16 */}
-          <div className="relative w-3/4"> {/* Added relative container with w-3/4 */}
-            {/* Offset Frame Div */}
-            <div className="absolute -left-4 -top-4 w-full h-full bg-primary rounded-xl opacity-20 z-0"></div>
-            {/* Image Tag */}
-            <img 
-              src={gladLeopardImg} 
-              alt="Happy Learn Leopard mascot" 
-              // Keep size classes, add relative and z-10
-              className="rounded-xl shadow-lg w-full mx-auto h-auto relative z-10" 
-            />
-          </div>
-        </div>
 
       </div>
     </section>

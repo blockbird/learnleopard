@@ -26,7 +26,7 @@ export const FeaturesSection = () => {
             <li><span className="font-medium">Detailed Analysis</span> - Tools that pass our initial screening get a comprehensive review focusing on educational value, usability, and safety</li>
           </ul>
           
-          <p className="text-gray-700">As a Learn Leopard member, you'll receive these curated updates every morning, saving you countless hours of searching and helping you discover the most valuable AI education tools right when they launch.</p>
+          <p className="text-gray-700">As a Learn Leopard member, you'll receive these curated updates, saving you countless hours of searching and helping you discover the most valuable AI education tools right when they launch.</p>
         </div>
       )
     },
