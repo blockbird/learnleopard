@@ -9,19 +9,15 @@ export const FeaturesSection = () => {
   const features = [
     {
       icon: <Calendar className="w-8 h-8 text-accent" />,
-      title: "Daily AI Tool Updates",
-      description: "Never miss a new AI education tool with our daily curated updates",
+      title: "AI Tool Updates",
+      description: "Never miss the right AI education tool",
       buttonText: "Discovery Process",
-      modalTitle: "Daily AI Tool Update",
+      modalTitle: "AI Tool Update",
       modalContent: (
         <div className="space-y-4">
           <h3 className="font-bold text-lg text-accent">How We Find the Latest AI Tools</h3>
-          <div className="bg-primary-light bg-opacity-20 p-4 rounded-lg">
-            <p className="text-sm font-medium text-accent">Our Discovery Process</p>
-            <p className="text-sm text-gray-600">While most people miss new AI education tool releases, our team catches them all</p>
-          </div>
           
-          <p>Every day, our dedicated research team scours the web using advanced monitoring systems to uncover the latest AI education tools as soon as they're released. Many of these tools don't have large marketing budgets and can be nearly impossible for parents and teachers to find on their own.</p>
+          <p>We scour the web to uncover the latest AI education tools.</p>
           
           <h4 className="font-bold text-accent mt-2">Our 3-Step Discovery Process:</h4>
           <ul className="list-disc pl-5 text-gray-700 space-y-2">
@@ -37,7 +33,7 @@ export const FeaturesSection = () => {
     {
       icon: <FileText className="w-8 h-8 text-accent" />,
       title: "In-Depth Written Reviews",
-      description: "Comprehensive analysis of every AI education tool on the market",
+      description: "Comprehensive analysis of the best AI education tools",
       buttonText: "Read Sample Review",
       modalTitle: "Written Review: Synthesis Maths Tutor",
       modalContent: (
@@ -101,30 +97,19 @@ export const FeaturesSection = () => {
     },
     {
       icon: <CalendarDays className="w-8 h-8 text-accent" />,
-      title: "AI Learning Schedules",
-      description: "Structured weekly guides to maximize AI-powered learning",
+      title: "Personalized Learning Plans",
+      description: "Structured AI Learning Plans so you get what fits your child, goals, family and lifestyle",
       buttonText: "Learn More",
-      modalTitle: "Get Started with AI Learning Schedules",
+      modalTitle: "Get Started with Personalized Learning Plans",
       modalContent: (
         <div className="space-y-4">
           <h3 className="font-bold text-lg text-accent">Hit the Ground Running with AI Learning</h3>
           <div className="bg-primary-light bg-opacity-20 p-4 rounded-lg">
-            <p className="text-sm font-medium text-accent">Personalized Learning Journeys</p>
-            <p className="text-sm text-gray-600">Customized for your child's age, interests, and learning style</p>
-            <p className="text-sm text-gray-600">Balanced screen time with meaningful learning activities</p>
+            <p className="text-sm font-medium text-accent">Personalized Learning Plans</p>
+            <p className="text-sm text-gray-600">Customized for your child's age, interests, and learning style and goals, and your family lifestyle</p>
           </div>
           
-          <p className="text-gray-700">Our "Hit the ground running" schedules make it super easy to get started with your child's AI learning journey. Each schedule is carefully crafted with exactly the right tools for your child's specific needs and learning style.</p>
-          
-          <div className="bg-white border border-primary-light rounded-lg p-4 my-4">
-            <h4 className="font-bold text-accent mb-2">Why Our Learning Schedules Work:</h4>
-            <ul className="list-disc pl-5 text-gray-700 space-y-2">
-              <li><span className="font-medium">Expert Curation</span> - Only the best AI tools selected by educational specialists</li>
-              <li><span className="font-medium">Balanced Approach</span> - Perfect mix of screen-based activities and hands-on learning</li>
-              <li><span className="font-medium">Goal-Oriented</span> - Clear learning objectives that build skills progressively</li>
-              <li><span className="font-medium">Easy to Follow</span> - Simple daily and weekly plans that parents can implement right away</li>
-            </ul>
-          </div>
+          <p className="text-gray-700">Our "Hit the ground running" plans give you the top 5 AI tools to start with best suited to your child (and you). They provide tips and tricks of getting started and using the tools so you feel confident to get your child learning today! Each plan is carefully crafted with exactly the right tools for your child's specific needs and learning style.</p>
           
           <p className="text-gray-700">Parents love our schedules because they can start their children's AI learning journey with confidence, knowing they're on the right track from day one. No more guesswork about which tools to use or how much time to spend on each activity.</p>
           

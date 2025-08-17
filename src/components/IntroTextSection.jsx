@@ -1,8 +1,6 @@
 import React from 'react';
 // Remove background image import
-// import jungleBg from '../assets/images/jungle-bg.jpg'; 
-// Import necessary icons
-import { Search, Filter, ClipboardList, UserCheck } from 'lucide-react'; 
+// import jungleBg from '../assets/images/jungle-bg.jpg';
 // Import the new image
 import gladLeopardImg from '../assets/images/gladleopard.png';
 
@@ -45,32 +43,6 @@ export const IntroTextSection = () => {
           <br />
           No ads 🚫. No sponsorships 🚫. No affiliate links 🚫. Just honest, hands-on reviews 👍.
         </p>
-
-        {/* Card container for the list */}
-        <div className="bg-white rounded-lg shadow-md p-6 md:p-8 my-12 inline-block text-left">
-          <h2 className="text-2xl md:text-3xl font-bold text-accent mb-6 text-center">
-            Every week, we:
-          </h2>
-
-          <ul className="list-none space-y-4"> {/* Increased spacing */}
-            <li className="flex items-start">
-              <Search size={20} className="text-primary mr-3 mt-1 flex-shrink-0" /> {/* Icon */}
-              <span className="text-gray-700">Scan the web for brand-new AI tools (forums, launch sites, even domain registrations)</span>
-            </li>
-            <li className="flex items-start">
-              <Filter size={20} className="text-primary mr-3 mt-1 flex-shrink-0" /> {/* Icon */}
-              <span className="text-gray-700">Filter and thoroughly test the most promising candidates</span>
-            </li>
-            <li className="flex items-start">
-              <ClipboardList size={20} className="text-primary mr-3 mt-1 flex-shrink-0" /> {/* Icon */}
-              <span className="text-gray-700">Score and rank them in our library 📊</span>
-            </li>
-            <li className="flex items-start">
-              <UserCheck size={20} className="text-primary mr-3 mt-1 flex-shrink-0" /> {/* Icon */}
-              <span className="text-gray-700">Build personalized learning plans tailored to your child's age, interests, and abilities 🎯</span>
-            </li>
-          </ul>
-        </div>
 
         <p className="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed"> {/* Use gray-700 */}
           We charge a subscription so we can stay completely unbiased—and keep you up-to-date.

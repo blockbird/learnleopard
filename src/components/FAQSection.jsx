@@ -8,11 +8,7 @@ export const FAQSection = () => {
   const faqs = [
     {
       question: "What is Learn Leopard?",
-      answer: "Learn Leopard is a membership platform that curates and reviews AI education tools. We provide daily updates on new tools, in-depth written reviews, video reviews, and structured learning guides to help you make the most of AI in education."
-    },
-    {
-      question: "How often are new AI tools added?",
-      answer: "We add new AI education tools daily. Our team constantly monitors the market for the latest releases and updates, ensuring you're always informed about the newest educational technology."
+      answer: "Learn Leopard is a membership platform that curates and reviews AI education tools. We provide updates on new tools, in-depth written reviews, video reviews, and structured learning guides to help you make the most of AI in education."
     },
     {
       question: "Can I cancel my membership at any time?",
