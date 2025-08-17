@@ -36,7 +36,6 @@ export const Header = () => {
   const navItems = [
     { id: 'features', label: 'Features' },
     { id: 'benefits', label: 'Benefits' },
-    { id: 'testimonials', label: 'Testimonials' },
     { id: 'pricing', label: 'Pricing' },
     { id: 'faq', label: 'FAQ' }
   ];

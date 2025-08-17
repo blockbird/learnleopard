@@ -1,29 +1,13 @@
-import React, { useState, useRef } from 'react';
-import { ArrowRight, Play } from 'lucide-react';
+import React from 'react';
+import { ArrowRight } from 'lucide-react';
+import learnleo1Image from '../assets/images/learnleo1.png';
 
 export const HeroSection = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef(null);
-
   const handleScroll = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  };
-
-  const handlePlayClick = () => {
-    if (videoRef.current) {
-      videoRef.current.play();
-    }
-  };
-
-  const handleVideoPlay = () => {
-    setIsPlaying(true);
-  };
-
-  const handleVideoPause = () => {
-    setIsPlaying(false);
   };
 
   return (
@@ -58,33 +42,11 @@ export const HeroSection = () => {
               <div className="absolute -right-10 -top-10 w-40 h-40 bg-secondary rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute -left-5 -bottom-5 w-28 h-28 bg-primary-light rounded-full opacity-20 animate-pulse" style={{animationDelay: '1s'}}></div>
               
-              <video 
-                ref={videoRef}
-                src="https://jpbq4vkvpplludcc.public.blob.vercel-storage.com/learnleopardlander-oYh4UIEgyohXiJQe8RcJuraGWsIriw.mp4"
-                poster="https://jpbq4vkvpplludcc.public.blob.vercel-storage.com/videothumbnail-ttMnJveKSmtYhZBRxB2QmwAfTW1KTN.jpeg"
-                controls
-                loop
-                playsInline
-                onPlay={handleVideoPlay}
-                onPause={handleVideoPause}
+              <img 
+                src={learnleo1Image}
+                alt="Learn Leopard - AI Learning Guide"
                 className="rounded-2xl shadow-2xl z-10 relative w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              >
-                Your browser does not support the video tag.
-              </video>
-
-              {!isPlaying && (
-                <button 
-                  onClick={handlePlayClick}
-                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 hover:bg-opacity-50 transition-opacity duration-300 rounded-2xl z-20 cursor-pointer focus:outline-none"
-                  aria-label="Play video"
-                >
-                  <Play 
-                    size={80}
-                    className="text-white opacity-80 group-hover:opacity-100 transform group-hover:scale-110 transition-all duration-300"
-                    fill="currentColor"
-                  />
-                </button>
-              )}
+              />
             </div>
           </div>
         </div>

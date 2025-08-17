@@ -5,11 +5,9 @@ import { HeroSection } from './components/HeroSection';
 import { IntroTextSection } from './components/IntroTextSection';
 import { FeaturesSection } from './components/FeaturesSection';
 import { BenefitsSection } from './components/BenefitsSection';
-import { TestimonialsSection } from './components/TestimonialsSection';
 import { PricingSection } from './components/PricingSection';
 import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
-import { StatsSection } from './components/StatsSection';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { CookiesPolicy } from './pages/CookiesPolicy';
@@ -41,8 +39,6 @@ const LandingPage = () => (
     <IntroTextSection />
     <FeaturesSection />
     <BenefitsSection />
-    <StatsSection />
-    <TestimonialsSection />
     <PricingSection />
     <FAQSection />
   </>
