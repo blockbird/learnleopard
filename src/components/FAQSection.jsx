@@ -78,16 +78,6 @@ export const FAQSection = () => {
             </div>
           ))}
         </div>
-        
-        <div className="text-center mt-12">
-          <p className="text-gray-600 mb-4">Still have questions? We're here to help!</p>
-          <a 
-            href="mailto:support@learnleopard.com" 
-            className="bg-gray-100 hover:bg-gray-200 text-accent font-medium px-6 py-2 rounded-full transition-colors"
-          >
-            Contact Support
-          </a>
-        </div>
       </div>
     </section>
   );
